@@ -8,6 +8,9 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the Bookstore');
+});
 app.use('/books', booksRouter);
 app.use('/auth', userRouter);
 app.use(errorHandler);
