@@ -6,7 +6,7 @@ const authorization = require('../middleware/auth');
 
 const router = express.Router();
 
-router.get('/', authorization, booksController.getBooks);
+router.get('/',  booksController.getBooks);
 router.post('/', upload.single('cover'), authorization, booksValidation, booksController.addBook);
 router.put('/:id', upload.single('cover'), authorization, booksValidation, booksController.updateBook);
 router.delete('/:id', authorization, booksController.deleteBook);

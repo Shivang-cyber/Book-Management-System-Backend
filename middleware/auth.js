@@ -1,14 +1,18 @@
-const jwt = require('jsonwebtoken');
+const jwt = require("jsonwebtoken");
 
 module.exports = (req, res, next) => {
   const authHeader = req.headers.authorization;
   if (!authHeader) {
-    return res.status(401).json({ message: 'Authorization header is missing.' });
+    return res
+      .status(401)
+      .json({ status: false, message: "Authorization header is missing." });
   }
 
-  const token = authHeader.split(' ')[1];
+  const token = authHeader.split(" ")[1];
   if (!token) {
-    return res.status(401).json({ message: 'Token is missing.' });
+    return res
+      .status(401)
+      .json({ status: false, message: "Token is missing." });
   }
 
   try {
@@ -16,6 +20,6 @@ module.exports = (req, res, next) => {
     req.user = decoded;
     next();
   } catch (err) {
-    res.status(400).json({ message: 'Invalid token.' });
+    res.status(400).json({ status: false, message: "Invalid token." });
   }
 };
