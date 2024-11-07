@@ -76,5 +76,12 @@ The backend is deployed on: `https://book-management-system-backend-ten.vercel.a
 - Secondary (Vercel): Secondary branch hosted on Vercel for quick access and testing at https://book-management-system-backend-ten.vercel.app.
 *Secondary is for a serverless function, as vercel only deploys that so test on master*
 
+Testing
+- Added jest for testing
+- has a test file
+- to run test add testuser to top variable and run
+  ```
+  npm test
+  ```
 
 
