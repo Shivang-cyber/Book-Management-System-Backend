@@ -44,14 +44,14 @@ To set up and run the backend locally, follow these steps:
    git clone https://github.com/Shivang-cyber/Book-Management-System-Backend.git
    ```
 2. Install the dependencies:
-  ```
-  npm install
-  ```
+   ```
+   npm install
+   ```
 3. Create a .env file in the root directory and add the environment variables listed above.
 4. Start the server:
-```
+   ```
    npm start
-```
+   ```
 The server should now be running on http://localhost:<PORT>
 depending on the port you put in .env
 
