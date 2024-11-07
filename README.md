@@ -56,22 +56,24 @@ The server should now be running on http://localhost:<PORT>
 depending on the port you put in .env
 
 API Endpoints
-The backend API endpoints are organized as follows:
+- The backend API endpoints are organized as follows:
 
-Auth Routes (/auth)
-POST /auth/signup - Register a new user with username and password.
-POST /auth/signin - Log in an existing user and retrieve a JSON Web Token.
-Book Routes (/books)
-POST /books - Add a new book to the store (authentication required).
-GET /books - Retrieve a list of all books in the store.
-GET /books/:id - View details of a specific book.
-PUT /books/:id - Edit a book's information (authentication required).
-DELETE /books/:id - Delete a book from the store (authentication required).
+Auth Routes `(/auth)`
+- POST `/auth/signup` - Register a new user with username and password.
+- POST `/auth/signin` - Log in an existing user and retrieve a JSON Web Token.
+  
+Book Routes `(/books)`
+- POST `/books` - Add a new book to the store (authentication required).
+- GET `/books` - Retrieve a list of all books in the store.
+- GET `/books/:id` - View details of a specific book.
+- PUT `/books/:id` - Edit a book's information (authentication required).
+- DELETE `/books/:id` - Delete a book from the store (authentication required).
+- 
 Deployment
-The backend is deployed on:
+The backend is deployed on: `https://book-management-system-backend-ten.vercel.app`
 
-Primary (EC2): Master branch hosted on AWS EC2.
-Secondary (Vercel): Secondary branch hosted on Vercel for quick access and testing at https://book-management-system-backend-ten.vercel.app.
+- Primary (EC2): Master branch hosted on AWS EC2.
+- Secondary (Vercel): Secondary branch hosted on Vercel for quick access and testing at https://book-management-system-backend-ten.vercel.app.
 *Secondary is for a serverless function, as vercel only deploys that so test on master*
 
 
