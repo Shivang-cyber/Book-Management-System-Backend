@@ -40,17 +40,17 @@ The following environment variables are required to run this project:
 To set up and run the backend locally, follow these steps:
 
 1. Clone the repository:
-   ```bash
+   ```
    git clone https://github.com/Shivang-cyber/Book-Management-System-Backend.git
    ```
 2. Install the dependencies:
-  ```bash
+  ```
   npm install
   ```
 3. Create a .env file in the root directory and add the environment variables listed above.
 4. Start the server:
 ```
-npm start
+   npm start
 ```
 The server should now be running on http://localhost:<PORT>
 depending on the port you put in .env
@@ -68,7 +68,7 @@ Book Routes `(/books)`
 - GET `/books/:id` - View details of a specific book.
 - PUT `/books/:id` - Edit a book's information (authentication required).
 - DELETE `/books/:id` - Delete a book from the store (authentication required).
-- 
+
 Deployment
 The backend is deployed on: `https://book-management-system-backend-ten.vercel.app`
 
